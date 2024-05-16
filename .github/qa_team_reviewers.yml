@@ -1,0 +1,31 @@
+reviewers:
+  # The default reviewers
+  defaults: # currently defaults to the default reviewers.  Will randomly assign one of them (or 2 depending on "number of reviewers" config)
+      - team:connor-test-team
+      - chrockhill12
+
+  groups:
+  #MDS-Platforms  
+      mds-plaform-approver:
+        - chrockhill12
+
+  per_author:
+  # MDS Platforms Review Assignments
+      mds-plaform-approver:
+        - team:connor-test-team
+
+
+  options:
+    ignore_draft: true
+    ignored_keywords:
+      - DO NOT REVIEW
+    enable_group_assignment: true
+
+    # Randomly pick reviewers up to this number.
+    # Do not set this option if you'd like to assign all matching reviewers.
+    number_of_reviewers: 1
+    #update
+
+    # If it's true, the last matching files-change pattern takes the most precedence (CODEOWNERS-compatible)
+  
+    # last_files_match_only: false
