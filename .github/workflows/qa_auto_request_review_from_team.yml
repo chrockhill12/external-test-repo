@@ -8,7 +8,7 @@ on:
 jobs:
   auto-request-review:
     name: Auto Request Review
-    runs-on: mds-emu-Ubuntu
+    runs-on: self-hosted
     steps:
       - name: Request review based on files changes and/or groups the author belongs to
         uses: necojackarc/auto-request-review@v0.13.0      
