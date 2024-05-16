@@ -11,7 +11,7 @@ jobs:
     runs-on: mds-emu-Ubuntu
     steps:
       - name: Request review based on files changes and/or groups the author belongs to
-        uses: mds-emu/mds-emu-mds-auto-request-review-action@v1.1.1       
+        uses: necojackarc/auto-request-review@v0.13.0      
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           config: .github/qa_team_reviewers.yml
